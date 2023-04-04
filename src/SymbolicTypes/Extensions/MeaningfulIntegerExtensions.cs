@@ -1,3 +1,4 @@
+using System;
 using ShowIntent.SymbolicTypes.Helpers;
 
 namespace ShowIntent.SymbolicTypes.Extensions
@@ -5,9 +6,14 @@ namespace ShowIntent.SymbolicTypes.Extensions
     public static class MeaningfulIntegerExtensions {
         public static T Add<T>(this T first, T second) where T : MeaningfulInteger
         {
-            var sumValue = first?.Value + second?.Value;
+            if (first is null || second is null)
+            {
+                var nullParameter = first is null ? nameof(first) : nameof(second);
+                throw new ArgumentNullException(nullParameter, $"value in add {typeof(T)} can't be null");
+            }
+            var sumValue = first.Value + second.Value;
             var genericConstructor = GenericTypesHelpers.CreateConstructor(typeof(T), typeof(int));
-            return (T) genericConstructor(sumValue.GetValueOrDefault());   
+            return (T) genericConstructor(sumValue);   
         }
         
         public static T Subtract<T>(this T first, T second) where T : MeaningfulInteger
