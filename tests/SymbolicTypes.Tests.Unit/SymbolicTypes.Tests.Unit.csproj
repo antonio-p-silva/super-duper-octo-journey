@@ -15,7 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\SymbolicTypes\SymbolicTypes.csproj" />
+      <ProjectReference Include="..\..\src\SymbolicTypes\SymbolicTypes.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymbolicTypes", "SymbolicTypes\SymbolicTypes.csproj", "{29905FD7-DCD7-4F17-8E7F-E6DA45E6465F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymbolicTypes", "src\SymbolicTypes\SymbolicTypes.csproj", "{29905FD7-DCD7-4F17-8E7F-E6DA45E6465F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymbolicTypes.Tests.Unit", "tests\SymbolicTypes.Tests.Unit\SymbolicTypes.Tests.Unit.csproj", "{3CEC0695-B338-49F8-A854-4A20E752FF74}"
 EndProject
