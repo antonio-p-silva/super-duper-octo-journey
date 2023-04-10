@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Numerics;
+using System.Collections.Generic;
 
 namespace ShowIntent.SymbolicTypes
 {
@@ -35,7 +35,7 @@ namespace ShowIntent.SymbolicTypes
         {
             if (ReferenceEquals(null, other)) return false;
             if (ReferenceEquals(this, other)) return true;
-            return Value == other.Value;
+            return Value == other.Value && this.GetType() == other.GetType();
         }
 
         public override bool Equals(object obj)

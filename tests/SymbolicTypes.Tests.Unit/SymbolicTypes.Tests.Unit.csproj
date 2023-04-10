@@ -18,4 +18,12 @@
       <ProjectReference Include="..\..\src\SymbolicTypes\SymbolicTypes.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="MeaningfulString\" />
+      <None Remove="MeaningfulGuid\" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="MeaningfulString\" />
+      <Folder Include="MeaningfulGuid\" />
+    </ItemGroup>
 </Project>
