@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace ShowIntent.SymbolicTypes
+﻿namespace ShowIntent.SymbolicTypes
 {
-    public abstract class MeaningfulGuid : IMeaningfulType<Guid>
+    public abstract class MeaningfulInt : IMeaningfulType<int>
     {
-        public abstract Guid Value { get; }
+        public abstract int Value { get; }
 
-        public static bool operator ==(MeaningfulGuid first, MeaningfulGuid second)
+        public static bool operator ==(MeaningfulInt first, MeaningfulInt second)
         {
             if (first is null)
             {
@@ -15,12 +13,12 @@ namespace ShowIntent.SymbolicTypes
             return first.Equals(second);
         }
 
-        public static bool operator !=(MeaningfulGuid first, MeaningfulGuid second)
+        public static bool operator !=(MeaningfulInt first, MeaningfulInt second)
         {
             return !(first == second);
         }
 
-        public bool Equals(MeaningfulGuid other)
+        public bool Equals(MeaningfulInt other)
         {
             if (ReferenceEquals(null, other)) return false;
             if (ReferenceEquals(this, other)) return true;
@@ -32,7 +30,7 @@ namespace ShowIntent.SymbolicTypes
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
             if (obj.GetType() != this.GetType()) return false;
-            return Equals((MeaningfulGuid)obj);
+            return Equals((MeaningfulInt)obj);
         }
 
         public override int GetHashCode()
