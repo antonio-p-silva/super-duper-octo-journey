@@ -4,7 +4,7 @@ using ShowIntent.SymbolicTypes;
 
 namespace SymbolicTypes.Tests.Unit
 {
-    public class MeaningfulStringTests
+    public class EqualityTest
     {
 
         [Test]
