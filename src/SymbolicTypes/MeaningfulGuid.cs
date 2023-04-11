@@ -2,7 +2,7 @@
 
 namespace ShowIntent.SymbolicTypes
 {
-    public abstract class MeaningfulGuid : IMeaningfulType<Guid>
+    public abstract class MeaningfulGuid : IEquatable<MeaningfulGuid>, IMeaningfulType<Guid>
     {
         public abstract Guid Value { get; }
 
