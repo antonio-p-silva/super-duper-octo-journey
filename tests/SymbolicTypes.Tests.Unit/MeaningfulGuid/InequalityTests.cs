@@ -1,9 +1,8 @@
 ﻿using System;
 using FluentAssertions;
 using NUnit.Framework;
-using ShowIntent.SymbolicTypes;
 
-namespace SymbolicTypes.Tests.Unit
+namespace SymbolicTypes.Tests.Unit.MeaningfulGuid
 {
 	public class InequalityTests
 	{
@@ -46,7 +45,7 @@ namespace SymbolicTypes.Tests.Unit
             (requestId != submission2).Should().BeTrue();
         }
 
-        private class SubmissionId : MeaningfulGuid
+        private class SubmissionId : ShowIntent.SymbolicTypes.MeaningfulGuid
         {
             public override Guid Value { get; }
 
@@ -56,7 +55,7 @@ namespace SymbolicTypes.Tests.Unit
             }
         }
 
-        private class RequestId : MeaningfulGuid
+        private class RequestId : ShowIntent.SymbolicTypes.MeaningfulGuid
         {
             public override Guid Value { get; }
 

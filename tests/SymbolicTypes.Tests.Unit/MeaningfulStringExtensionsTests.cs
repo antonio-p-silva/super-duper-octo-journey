@@ -21,7 +21,7 @@ namespace SymbolicTypes.Tests.Unit
             name.IsDefined().Should().BeFalse();
         }    
         
-        private class CustomerName : MeaningfulString
+        private class CustomerName : ShowIntent.SymbolicTypes.MeaningfulString
         {
             public CustomerName(string value) : base(value)
             {

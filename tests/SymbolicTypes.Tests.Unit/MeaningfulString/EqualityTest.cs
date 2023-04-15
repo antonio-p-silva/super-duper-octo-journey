@@ -1,8 +1,7 @@
 using FluentAssertions;
 using NUnit.Framework;
-using ShowIntent.SymbolicTypes;
 
-namespace SymbolicTypes.Tests.Unit
+namespace SymbolicTypes.Tests.Unit.MeaningfulString
 {
     public class EqualityTest
     {
@@ -55,7 +54,7 @@ namespace SymbolicTypes.Tests.Unit
             (lastName == customerName).Should().BeFalse();
         }
 
-        private class LastName : MeaningfulString
+        private class LastName : ShowIntent.SymbolicTypes.MeaningfulString
         {
             public LastName(string value) : base(value)
             {
@@ -63,7 +62,7 @@ namespace SymbolicTypes.Tests.Unit
             }
         }
 
-        private class CustomerName : MeaningfulString
+        private class CustomerName : ShowIntent.SymbolicTypes.MeaningfulString
         {
             public CustomerName(string value) : base(value)
             {

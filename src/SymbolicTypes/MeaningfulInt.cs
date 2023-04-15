@@ -1,6 +1,8 @@
-﻿namespace ShowIntent.SymbolicTypes
+﻿using System;
+
+namespace ShowIntent.SymbolicTypes
 {
-    public abstract class MeaningfulInt : IMeaningfulType<int>
+    public abstract class MeaningfulInt : IEquatable<MeaningfulInt>, IMeaningfulType<int>
     {
         public abstract int Value { get; }
 
