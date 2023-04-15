@@ -1,8 +1,5 @@
-﻿
-using System;
-using FluentAssertions;
+﻿using FluentAssertions;
 using NUnit.Framework;
-using ShowIntent.SymbolicTypes;
 
 namespace SymbolicTypes.Tests.Unit.MeaningfulInt
 {

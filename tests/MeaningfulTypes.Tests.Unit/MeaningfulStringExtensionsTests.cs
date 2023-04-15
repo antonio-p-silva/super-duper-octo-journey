@@ -1,6 +1,5 @@
 using FluentAssertions;
 using NUnit.Framework;
-using ShowIntent.SymbolicTypes;
 using ShowIntent.SymbolicTypes.Extensions;
 
 namespace SymbolicTypes.Tests.Unit
