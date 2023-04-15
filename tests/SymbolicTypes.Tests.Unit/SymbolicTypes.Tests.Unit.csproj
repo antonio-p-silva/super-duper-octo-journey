@@ -21,9 +21,11 @@
     <ItemGroup>
       <None Remove="MeaningfulString\" />
       <None Remove="MeaningfulGuid\" />
+      <None Remove="MeaningfulInt\" />
     </ItemGroup>
     <ItemGroup>
       <Folder Include="MeaningfulString\" />
       <Folder Include="MeaningfulGuid\" />
+      <Folder Include="MeaningfulInt\" />
     </ItemGroup>
 </Project>
