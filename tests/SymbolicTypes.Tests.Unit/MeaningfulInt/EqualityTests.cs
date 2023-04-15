@@ -37,7 +37,7 @@ namespace SymbolicTypes.Tests.Unit.MeaningfulInt
         }
 
         [Test]
-        public void GivenMeaningfulGuidsWithDifferentTypes_ShouldReturnFalse()
+        public void GivenMeaningfulIntWithDifferentTypes_ShouldReturnFalse()
         {
             Age age = new Age(1);
             NumberOfPosts numberOfPosts = new NumberOfPosts(1);
