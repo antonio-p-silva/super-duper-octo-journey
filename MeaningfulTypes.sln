@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeaningfulTypes", "src\Mean
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeaningfulTypes.Tests.Unit", "tests\MeaningfulTypes.Tests.Unit\MeaningfulTypes.Tests.Unit.csproj", "{3CEC0695-B338-49F8-A854-4A20E752FF74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_build", "build\_build.csproj", "{43A3244F-488E-44D8-AF1E-7CA00B8F7960}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{3CEC0695-B338-49F8-A854-4A20E752FF74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CEC0695-B338-49F8-A854-4A20E752FF74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CEC0695-B338-49F8-A854-4A20E752FF74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43A3244F-488E-44D8-AF1E-7CA00B8F7960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43A3244F-488E-44D8-AF1E-7CA00B8F7960}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43A3244F-488E-44D8-AF1E-7CA00B8F7960}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43A3244F-488E-44D8-AF1E-7CA00B8F7960}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
